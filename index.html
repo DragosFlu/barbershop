@@ -8,43 +8,54 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="global-header">
       <a href="index.html">
         <img src="images/Logo.svg" alt="Logo" />
       </a>
-      <nav>
+      <nav class="main-navigation">
         <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/services.html">Services and Prices</a></li>
-          <li><a href="/barbers.html">Barbers</a></li>
-          <li><a href="/contact.html">Contacts</a></li>
+          <li><a class="active no-underline" href="/about.html">About</a></li>
+          <li>
+            <a class="no-underline" href="/services.html"
+              >Services and Prices</a
+            >
+          </li>
+          <li>
+            <a class="no-underline" href="/barbers.html">Barbers</a>
+          </li>
+          <li>
+            <a class="no-underline" href="/contact.html">Contacts</a>
+          </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-
-      <button>Book A SERVICE</button>
-      <section>
+      <a class="phone-number no-underline" href="tel:+380441111111"
+        >+38 044 111 11 11</a
+      >
+      <button class="book-a-service">Book A SERVICE</button>
+      <aside>
         <a
+          class="social-links no-underline"
           href="https://youtube.com"
           target="_blank"
           rel="nofollow norefferer noopener"
           >Youtube</a
         >
         <a
+          class="social-links active no-underline"
           href="https://Instagram.com"
           target="_blank"
           rel="nofollow norefferer noopener"
           >Instagram</a
         >
         <img src="images/header_section_divider.png" alt="|" />
-      </section>
+      </aside>
     </header>
     <main>
-      <!--Landing page-->
-      <section>
+      <!--Hero Section-->
+      <section class="section hero-section">
         <img src="images/landing_dash.png" alt="-" />
-        <h3>A hair salon for men in Kyiv</h3>
-        <h1>BarberShop</h1>
+        <h3 class="section-sub-heading">A hair salon for men in Kyiv</h3>
+        <h1 class="hero-heading">BarberShop</h1>
         <p>
           We are experts in trendy men's haircuts. <br />
           We work quickly, carefully, and tastefully.
@@ -54,31 +65,33 @@
       </section>
 
       <!--About-->
-      <section>
+      <section class="section section-with-light-bg">
         <img src="images/img-1.png" alt="Frizer tunde barba" />
         <img src="images/img-2.png" alt="Frizer tunde barba" />
         <img src="images/about_dash.png" alt="-" width="60px" height="1px" />
-        <h3>About</h3>
-        <h2>The Best Barbershop in Your City</h2>
+        <h3 class="section-sub-heading">About</h3>
+        <h2 class="section-heading">The Best Barbershop in Your City</h2>
         <p>
           If you want to add more confidence to your image, you are definitely
           in the right place.
         </p>
-        <p>
+        <p class="small-text">
           We are a team that never rests on its laurels and yearns for change.
           And once you fall into the hands of our master, you will never be the
           same again. We are a team that is always on the same wavelength with
           clients. Therefore, we are always ready to improve everyone who comes
           to us!
         </p>
-        <button>Book a service</button>
+        <button class="book-a-service">Book a service</button>
       </section>
 
       <!--Services and prices-->
-      <section>
-        <h3>Spend time in the company of the best craftsmen</h3>
+      <section class="section services-and-prices">
+        <h3 class="section-sub-heading">
+          Spend time in the company of the best craftsmen
+        </h3>
         <h2>Services and Prices</h2>
-        <ul>
+        <ul class="services-list">
           <li>
             <span>Men's Haircut</span>
             <span>from 300 UAH</span>
@@ -114,11 +127,11 @@
             <span>from 200 UAH</span>
           </li>
         </ul>
-        <button>Book a service</button>
+        <button class="book-a-service">Book a service</button>
       </section>
 
       <!--Old school-->
-      <section>
+      <section class="section section-with-light-bg">
         <ul>
           <li>
             <span>600</span><sup>+</sup><span>Satisfied Customers per Day</span>
@@ -135,7 +148,7 @@
           </li>
         </ul>
         <article>
-          <h3>Old school</h3>
+          <h3 class="section-sub-heading">Old school</h3>
           <h2>Why do they come to us?</h2>
           <p>
             Only good things are said about us. But it is better &#x2028; to see
@@ -145,10 +158,12 @@
       </section>
 
       <!--Our barbers-->
-      <section>
-        <h3>for true connoisseurs of the atmosphere</h3>
+      <section class="section section-with-light-bg section-with-gray-bg">
+        <h3 class="section-sub-heading">
+          for true connoisseurs of the atmosphere
+        </h3>
         <h2>Our Barbers</h2>
-        <ul>
+        <ul class="barbers-list">
           <li>
             <img src="./images/barber1.png" alt="barber in action" /><br />John
             Smith <br /><em>Extreme Barber</em>
@@ -168,8 +183,8 @@
       </section>
 
       <!--Barbers in action-->
-      <section>
-        <h3>In Latin, "barba" means "beard"</h3>
+      <section class="section section-with-light-bg">
+        <h3 class="section-sub-heading">In Latin, "barba" means "beard"</h3>
         <ul>
           <li><img src="./images/barberwork1.png" alt="barber in action" /></li>
           <li><img src="./images/barberwork2.png" alt="barber in action" /></li>
@@ -179,13 +194,13 @@
       </section>
 
       <!--Contacts-->
-      <section>
+      <section class="section">
         <h2>Contacts</h2>
         <address>
           <span
             ><img src="./images/map-pin.svg" /> Main Street, 7A Kyiv,08132</span
           ><br />
-          <a href="tel:+380441111111"
+          <a class="no-underline" href="tel:+380441111111"
             ><img src="./images/phone.svg" />+38 044 111 11 11 </a
           ><br />
           <a href="mailto:barbershop@email.com"
@@ -206,6 +221,7 @@
       <ul>
         <li>
           <a
+            class="no-underline"
             href="https://youtube.com"
             target="_blank"
             rel="nofollow norefferer noopener"
@@ -214,6 +230,7 @@
         </li>
         <li>
           <a
+            class="no-underline"
             href="https://Instagram.com"
             target="_blank"
             rel="nofollow norefferer noopener"
